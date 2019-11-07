@@ -1,0 +1,15 @@
+* {
+  background-color: white;
+}
+
+#logo {
+  width: 50%;
+}
+
+h1 {
+  font-family: "Poppins";
+}
+
+.landing {
+  background: #1762a7;
+}
