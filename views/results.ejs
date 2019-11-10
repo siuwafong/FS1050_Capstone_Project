@@ -1,1 +1,21 @@
-<% include partials/header.ejs %> <% include partials/footer.ejs %>
+<% include partials/header.ejs %>
+<div class="slidecontainer">
+  <p>Price ($/hour)</p>
+  <input
+    type="range"
+    min="1"
+    max="1000"
+    value="40"
+    class="slider"
+    id="price_slider"
+  />
+</div>
+
+<div id="filter_subjects">
+  <p>Subjects</p>
+</div>
+
+<div id="format">
+  <p>Tutoring Format</p>
+</div>
+<% include partials/footer.ejs %>
