@@ -13,3 +13,7 @@ h1 {
 .landing {
   background: #1762a7;
 }
+
+#profile_pic {
+  border-radius: 50%;
+}

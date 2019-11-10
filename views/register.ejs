@@ -1,1 +1,178 @@
-<% include partials/header.ejs %> <% include partials/footer.ejs %>
+<% include partials/header.ejs %>
+
+<form action="/" method="post">
+  <div>
+    <label for="username">Username: </label>
+    <input
+      type="text"
+      id="username"
+      name="user_name"
+      placeholder="Input username"
+    />
+  </div>
+
+  <div id="password_form">
+    <div>
+      <label for="password">Password: </label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Input password (minimum 8 characters long)"
+      />
+    </div>
+    <div>
+      <label for="password">Password: </label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Input password (minimum 8 characters long)"
+      />
+    </div>
+  </div>
+
+  <div id="password_form">
+    <div>
+      <label for="first_name">First Name: </label>
+      <input
+        type="text"
+        id="first_name"
+        name="first_name"
+        placeholder="First Name"
+      />
+    </div>
+
+    <div>
+      <label for="first_name">Last Name: </label>
+      <input
+        type="text"
+        id="last_name"
+        name="last_name"
+        placeholder="Last Name"
+      />
+    </div>
+  </div>
+
+  <div id="other_form">
+    <div>
+      <label for="DOB"> Date of Birth: </label>
+      <input type="date" id="DOB" name="DOB" placeholder="DD/MM/YY" />
+    </div>
+
+    <div>
+      <label for="location">Location: </label>
+      <input type="text" id="location" name="location" placeholder="City" />
+    </div>
+
+    <div>
+      <label for="grade">Grade: </label>
+      <input
+        type="number"
+        min="9"
+        max="12"
+        id="grade"
+        name="grade"
+        placeholder="9-12"
+      />
+    </div>
+  </div>
+
+  <div>
+    <fieldset>
+      <legend>
+        Choose your subjects (Check all subjects that you would like tutoring in
+        or are able to tutor
+      </legend>
+
+      <div>
+        <input type="checkbox" id="MCR3U" name="functions" value="MCR3U" />
+        <label for="MCR3U"> MCR3U Functions </label>
+      </div>
+
+      <div>
+        <input
+          type="checkbox"
+          id="MHF4u"
+          name="advanced_functions"
+          value="MHF4U"
+        />
+        <label for="MHF4U"> MHF4U Advanced Functions </label>
+      </div>
+
+      <div>
+        <input
+          type="checkbox"
+          id="MCV4U"
+          name="calculus_and_vectors"
+          value="MCV4U"
+        />
+        <label for="MCV4U"> MCV4U Calculus and Vectors </label>
+      </div>
+
+      <div>
+        <input
+          type="checkbox"
+          id="MDM4U"
+          name="data_management"
+          value="MDM4U"
+        />
+        <label for="MDM4U"> MDM4U Data Management </label>
+      </div>
+
+      <div>
+        <input type="checkbox" id="SPH3U" name="physics_11" value="SPH3U" />
+        <label for="SPH3U"> SPH3U Physics 11 </label>
+      </div>
+
+      <div>
+        <input type="checkbox" id="SPH4U" name="physics_12" value="SPH4U" />
+        <label for="SPH4U"> SPH4U Physics 12 </label>
+      </div>
+
+      <div>
+        <input type="checkbox" id="SCH3U" name="chemistry_11" value="SCH3U" />
+        <label for="SCH3U"> SCH3U Chemistry 11 </label>
+      </div>
+
+      <div>
+        <input type="checkbox" id="SCH4U" name="chemistry_12" value="SCH4U" />
+        <label for="SCH4U"> SCH4U Chemistry 12 </label>
+      </div>
+
+      <div>
+        <input type="checkbox" id="SBI3U" name="biology_11" value="SBI3U" />
+        <label for="SBI3U"> SBI3U Biology 11 </label>
+      </div>
+
+      <div>
+        <input type="checkbox" id="SBI4U" name="biology_12" value="SBI4U" />
+        <label for="SBI4U"> SBI4U Biology 12 </label>
+      </div>
+
+      <div>
+        <input
+          type="checkbox"
+          id="SES4U"
+          name="earth_and_space"
+          value="SES4U"
+        />
+        <label for="SES4U"> SES4U Earth and Space Science </label>
+      </div>
+
+      <div>
+        <input type="checkbox" id="ICS3U" name="compsci_11" value="ICS3U" />
+        <label for="ICS3U"> ICS3U Introduction to Computer Science </label>
+      </div>
+
+      <div>
+        <input type="checkbox" id="ICS4U" name="compsci_12" value="ICS4U" />
+        <label for="ICS4U"> ICS4U Computer Science </label>
+      </div>
+    </fieldset>
+  </div>
+
+  <button type="button" class="btn btn-primary">Register</button>
+</form>
+
+<% include partials/footer.ejs %>
